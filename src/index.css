@@ -1,0 +1,540 @@
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe04b;
+}
+@font-face {
+  font-family: "PP Acma";
+  font-weight: 400;
+  src: url("./fonts/PPAcma-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Acma";
+  font-weight: 700;
+  src: url("./fonts/PPAcma-Semibold.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Telegraf";
+  font-weight: 400;
+  src: url("./fonts/PPTelegraf-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Telegraf";
+  font-weight: 300;
+  src: url("./fonts/PPTelegraf-Ultralight.otf") format("opentype");
+}
+@font-face {
+  font-family: "PP Telegraf";
+  font-weight: 700;
+  src: url("./fonts/PPTelegraf-Ultrabold.otf") format("opentype");
+}
+.Navbar {
+  width: 100%;
+  padding: 60px 0;
+}
+.Navbar section,
+.heroSection section {
+  margin: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+.Navbar .left span {
+  font-family: "PP Telegraf";
+  font-weight: 700;
+  font-size: 24px;
+}
+.Navbar .right span {
+  font-family: "PP Telegraf";
+  font-weight: 300;
+  font-size: 24px;
+  margin-right: 140px;
+  cursor: pointer;
+}
+.heroSection {
+  height: 80vh;
+  width: 100%;
+}
+
+.heroSection .left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+
+  width: 50%;
+  height: 100%;
+}
+.heroSection .left h1 {
+  font-family: "PP Acma";
+  font-weight: 700;
+  text-align: left;
+  float: left;
+  font-size: 125px;
+
+  margin-bottom: 40px;
+}
+.heroSection .left p {
+  font-family: "PP Telegraf";
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 40px;
+  max-width: 98%;
+}
+.heroSection .left .inputContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.heroSection .left .inputContainer input {
+  width: 47%;
+  border: 1px solid #d4adfe;
+  color: black;
+  padding: 0 10px;
+  font-family: "PP Telegraf";
+  font-weight: 400;
+  font-size: 24px;
+  height: 60px;
+}
+.heroSection .left .inputContainer div {
+  border: 1px solid #d4adfe;
+  cursor: pointer;
+  width: 47%;
+  height: 60px;
+  color: black;
+  font-family: "PP Telegraf";
+  font-weight: 400;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d4adfe;
+}
+.heroSection .left .inputContainer div:hover {
+  background-color: #ffe04b;
+  border: 1px solid #000;
+}
+.heroSection .right {
+  width: 50%;
+  height: 100%;
+}
+.heroSection .right .imgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heroSection .right img {
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain;
+}
+.DescriptionSection {
+  height: 100vh;
+  width: 100%;
+}
+.DescriptionSection section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 0 200px;
+}
+.DescriptionSection .left,
+.DescriptionSection .right {
+  border-radius: 16px;
+  width: 30%;
+  min-height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  background-color: #fff;
+}
+.DescriptionSection div h1 {
+  font-family: "PP Telegraf";
+
+  font-weight: 700;
+  font-size: 28px;
+}
+.DescriptionSection div span {
+  min-height: 100px;
+  padding: auto;
+  text-align: justify;
+  font-family: "PP Telegraf";
+
+  font-weight: 400;
+  font-size: 20px;
+}
+.DescriptionSection div .imgContainer {
+  width: 40vh;
+  height: 40vh;
+}
+
+.DescriptionSection div img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ExamplesSection span {
+  font-family: "PP Telegraf";
+
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.ExamplesSection {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 200px;
+}
+.ExamplesSection section {
+  margin: 0 200px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: left;
+}
+.ExamplesSection .imagesContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ExamplesSection .imgContainer {
+  width: 48%;
+  height: 100%;
+}
+.ExamplesSection img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ExamplesSection .h1Container {
+  padding: 100px 50px;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ExamplesSection .h1Container h1 {
+  font-family: "PP Acma";
+
+  font-weight: 700;
+  font-size: 48px;
+  max-width: 65%;
+}
+.ExamplesSection .h1Container span {
+  font-family: "PP Telegraf";
+
+  font-weight: 700;
+  font-size: 16px;
+}
+.subscribe .left h1 {
+  font-family: "PP Acma";
+
+  font-weight: 700;
+  font-size: 40px;
+}
+.subscribe section {
+  padding: 0 50px;
+
+  border-radius: 16px;
+  background-color: #fff;
+  margin-bottom: 100px;
+}
+.subscribe .left {
+  margin: 0;
+  padding: 0;
+}
+.subscribe .left h1 {
+  margin-top: 0;
+}
+.subscribe {
+  height: fit-content;
+}
+@media screen and (max-width: 1700px) {
+  .ExamplesSection span,
+  .ExamplesSection .h1Container h1 {
+    font-size: 40px;
+  }
+  .Navbar section,
+  .heroSection section,
+  .DescriptionSection section,
+  .ExamplesSection section {
+    margin: 0 150px;
+  }
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 22px;
+  }
+  .DescriptionSection div span {
+    font-size: 18px;
+  }
+  .heroSection .left .inputContainer input,
+  .heroSection .left .inputContainer div {
+    height: 50px;
+    font-size: 22px;
+  }
+  .heroSection .left p {
+    font-size: 22px;
+  }
+
+  .subscribe .left h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ExamplesSection span,
+  .ExamplesSection .h1Container h1 {
+    font-size: 35px;
+  }
+
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 20px;
+  }
+  .DescriptionSection div span {
+    font-size: 15px;
+  }
+
+  .heroSection .left p {
+    font-size: 20px;
+  }
+  .heroSection .left h1 {
+    font-size: 100px;
+  }
+  .heroSection .left .inputContainer input,
+  .heroSection .left .inputContainer div {
+    height: 40px;
+    font-size: 20px;
+  }
+  .subscribe .left h1 {
+    font-size: 30px;
+  }
+  .ExamplesSection {
+    margin-bottom: 400px;
+  }
+
+  .subscribe section {
+    padding: 0px 30px;
+  }
+}
+@media screen and (max-width: 1366px) {
+  .ExamplesSection span,
+  .ExamplesSection .h1Container h1 {
+    font-size: 30px;
+  }
+  .DescriptionSection .left,
+  .DescriptionSection .right {
+    min-height: 30%;
+    padding: 50px;
+  }
+  .Navbar .right span {
+    margin-right: 100px;
+    font-size: 18px;
+  }
+  .heroSection .left .inputContainer input,
+  .heroSection .left .inputContainer div {
+    height: 35px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .ExamplesSection {
+    margin-bottom: 200px;
+  }
+  .DescriptionSection .left,
+  .DescriptionSection .right {
+    padding: 15px 80px;
+  }
+  .heroSection .left .inputContainer input,
+  .heroSection .left .inputContainer div {
+    width: 45%;
+  }
+}
+@media screen and (max-height: 1000px) {
+  .ExamplesSection {
+    margin-bottom: 200px;
+  }
+}
+@media screen and (max-height: 800px) {
+  .ExamplesSection {
+    margin-bottom: 400px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .ExamplesSection {
+    margin-bottom: 200px;
+  }
+  .Navbar .right span {
+    margin-right: 70px;
+    font-size: 16px;
+  }
+  .ExamplesSection span,
+  .ExamplesSection .h1Container h1 {
+    font-size: 20px;
+  }
+  .Navbar section,
+  .heroSection section,
+  .DescriptionSection section,
+  .ExamplesSection section {
+    margin: 0 120px;
+  }
+  .heroSection .left h1 {
+    font-size: 70px;
+  }
+  .heroSection .left p {
+    font-size: 16px;
+  }
+  .heroSection .left .inputContainer input,
+  .heroSection .left .inputContainer div {
+    height: 30px;
+    font-size: 16px;
+  }
+  .DescriptionSection .left,
+  .DescriptionSection .right {
+    padding: 18px 40px;
+  }
+  .DescriptionSection div h1 {
+    font-family: "PP Telegraf";
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .DescriptionSection div span {
+    font-size: 12px;
+  }
+  .DescriptionSection div span {
+    min-height: 50px;
+  }
+  .subscribe .left h1 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ExamplesSection .h1Container {
+    padding: 40px 10px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .ExamplesSection {
+    margin-bottom: 300px;
+  }
+  .Navbar {
+    padding: 30px 0;
+  }
+  .heroSection .left h1 {
+    font-size: 40px;
+  }
+  .heroSection .left p {
+    font-size: 12px;
+  }
+  .heroSection .left .inputContainer input,
+  .heroSection .left .inputContainer div {
+    height: 20px;
+    font-size: 12px;
+  }
+  .Navbar section,
+  .heroSection section,
+  .DescriptionSection section,
+  .ExamplesSection section {
+    margin: 0 20px;
+  }
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 12px;
+  }
+  .Navbar .right span {
+    margin-right: 50px;
+  }
+  .subscribe .left h1 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .DescriptionSection div .imgContainer {
+    width: 20vh;
+    height: 20vh;
+  }
+  .Navbar .right {
+    display: none;
+  }
+  .Navbar .left span,
+  .Navbar .right span {
+    font-size: 24px;
+  }
+  .heroSection section {
+    flex-direction: column;
+    text-align: left;
+    align-items: normal;
+  }
+  .heroSection .left,
+  .heroSection .right {
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .heroSection .left p {
+    font-size: 16px;
+  }
+  .heroSection .left .inputContainer {
+    flex-direction: column;
+  }
+  .heroSection .left .inputContainer div {
+    margin-bottom: 10px;
+    width: 80%;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .heroSection .left .inputContainer input {
+    margin-bottom: 10px;
+    width: 80%;
+    height: 45px;
+    font-size: 20px;
+  }
+  .DescriptionSection section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .DescriptionSection .left,
+  .DescriptionSection .right {
+    margin: 20px 0;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 15px;
+  }
+  .DescriptionSection div span {
+    width: 70%;
+    text-align: justify;
+    padding: 0;
+  }
+  .ExamplesSection {
+    margin-top: 100px;
+  }
+  .ExamplesSection .imagesContainer {
+    flex-direction: column;
+  }
+
+  .ExamplesSection .imgContainer {
+    width: 100%;
+  }
+  .ExamplesSection .h1Container h1 {
+    max-width: 100%;
+    text-align: left;
+  }
+  .ExamplesSection {
+    margin-bottom: 200px;
+  }
+  .subscribe section {
+    background-color: #ffe04b;
+    padding: 0;
+  }
+  .DescriptionSection div h1 {
+    text-align: left;
+    padding: 20px;
+  }
+}
